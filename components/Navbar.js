@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { MdNotificationsNone } from "react-icons/md";
@@ -11,21 +12,29 @@ const Navbar = () => {
     <>
       <nav className={styles.nav}>
         <div className={styles.logo}>
-          <img src='../images/logo.png'  />
+          <img src="../images/logo.png" />
         </div>
         <div className={styles.pages}>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
             </li>
             <li>
-              <a href="/">Profile</a>
+              <Link href="/">
+                <a>Profile</a>
+              </Link>
             </li>
             <li>
-              <a href="/">Posts</a>
+              <Link href="/">
+                <a>Posts</a>
+              </Link>
             </li>
             <li>
-              <a href="/">Pages</a>
+              <Link href="/">
+                <a>Pages</a>
+              </Link>
             </li>
           </ul>
         </div>

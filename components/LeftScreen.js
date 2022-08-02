@@ -1,5 +1,6 @@
 import React from "react";
-import styles from '../styles/LeftScreen.module.css';
+import Link from "next/link";
+import styles from "../styles/LeftScreen.module.css";
 import { AiFillHome } from "react-icons/ai";
 import { BiMessageDots } from "react-icons/bi";
 import { CgProfile, CgMoreO } from "react-icons/cg";
@@ -14,50 +15,66 @@ const LeftScreen = () => {
         <div className={styles.left_pages}>
           <ul>
             <li>
-              <a href="/">
-                <AiFillHome className={styles.page_icon} />
-                <div className={styles.text}>Home</div>
-              </a>
+              <Link href="/">
+                <a>
+                  <AiFillHome className={styles.page_icon} />
+                  <div className={styles.text}>Home</div>
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
-                <MdOutlineExplore className={styles.page_icon} />
-                <div className={styles.text}>Explore</div>
-              </a>
+              <Link href="/">
+                <a>
+                  <MdOutlineExplore className={styles.page_icon} />
+                  <div className={styles.text}>Explore</div>
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
-                <IoIosNotifications className={styles.page_icon} />
-                <div className={styles.text}>Notifications</div>
-              </a>
+              <Link href="/">
+                <a>
+                  <IoIosNotifications className={styles.page_icon} />
+                  <div className={styles.text}>Notifications</div>
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
-                <BiMessageDots className={styles.page_icon} />
-                <div className={styles.text}>Message</div>
-              </a>
+              <Link href="/">
+                <a>
+                  <BiMessageDots className={styles.page_icon} />
+                  <div className={styles.text}>Message</div>
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
-                <CgProfile className={styles.page_icon} />
-                <div className={styles.text}>Profile</div>
-              </a>
+              <Link href="/">
+                <a>
+                  <CgProfile className={styles.page_icon} />
+                  <div className={styles.text}>Profile</div>
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
-                <CgMoreO className={styles.page_icon} />
-                <div className={styles.text}>More</div>
-              </a>
+              <Link href="/">
+                <a>
+                  <CgMoreO className={styles.page_icon} />
+                  <div className={styles.text}>More</div>
+                </a>
+              </Link>
             </li>
           </ul>
           <div className={styles.post_btn}>
-            <a href="/">Post Now</a>
+            <Link href="/">
+              <a>Post Now</a>
+            </Link>
           </div>
           <div className={styles.logout}>
-            <a href="/">
-              <RiLogoutCircleRLine className={styles.logout_icon} />
-              <div className={styles.text}>Logout</div>
-            </a>
+            <Link href="/">
+              <a>
+                <RiLogoutCircleRLine className={styles.logout_icon} />
+                <div className={styles.text}>Logout</div>
+              </a>
+            </Link>
           </div>
         </div>
       </div>
