@@ -1,0 +1,43 @@
+.middle_container {
+  position: absolute;
+  width: 600px;
+  left: 500px;
+  top: 50px;
+  padding: 50px;
+}
+.cards {
+  margin-left: -35px;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #fff;
+  width: 530px;
+  padding: 20px;
+  margin: 20px;
+}
+.card .profile {
+  display: flex;
+}
+.card .profile .avatar {
+  font-size: 45px;
+}
+.card .profile .text {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .middle_container {
+    position: relative;
+    width: 80%;
+    left: 0;
+    padding: 0;
+    margin: 50px;
+    padding-right: 520px;
+  }
+  .cards {
+    margin-left: -50px;
+  }
+}

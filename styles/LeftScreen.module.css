@@ -1,0 +1,62 @@
+.container {
+  position: fixed;
+  top: 100px;
+  left: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 300px;
+  height: 610px;
+  background: #fff;
+}
+.left_pages {
+  margin: 10px;
+  padding: 10px;
+}
+.left_pages ul {
+  margin: 5px;
+  cursor: pointer;
+}
+.left_pages ul li {
+  list-style: none;
+}
+.left_pages ul li a {
+  margin-top: 30px;
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}
+.post_btn {
+  margin: 50px;
+}
+.post_btn a {
+  background: crimson;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+.left_pages ul li .page_icon {
+  font-size: 25px;
+}
+.left_pages ul li .text {
+  margin-left: 10px;
+}
+.left_pages .logout a {
+  margin-top: 80px;
+  display: flex;
+  padding: 20px;
+  text-decoration: none;
+  padding-left: 35px;
+  color: #000;
+}
+.logout_icon {
+  font-size: 25px;
+}
+.logout .text {
+  margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: none;
+  }
+}
